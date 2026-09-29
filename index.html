@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Инвестируйте в золото — Halyk Bank</title>
+<meta name="description" content="Покупка и продажа мерных слитков аффинированного золота в Halyk Bank. Курс золота, характеристики слитков, заявка на покупку или продажу.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><circle cx=%2212%22 cy=%2212%22 r=%2211%22 fill=%22%2300805F%22/></svg>">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-topline">
+    <div class="container header-topline__inner">
+      <a href="https://halykbank.kz/ru" class="logo" aria-label="Halyk Bank — на главную">
+        <svg width="132" height="46" viewBox="0 0 132 46" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M23 4C13 4 5 12 5 22s8 18 18 18 18-8 18-18S33 4 23 4Zm0 30c-6.6 0-12-5.4-12-12s5.4-12 12-12 12 5.4 12 12-5.4 12-12 12Z" fill="#00805F"/>
+        </svg>
+        <span class="logo__text">Halyk</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="https://halykbank.kz/ru" class="active">Частным клиентам</a></li>
+          <li><a href="https://halykbank.kz/business">Бизнесу</a></li>
+          <li><a href="https://halykbank.kz/halykclub/page/halyk-club">Halyk Club</a></li>
+          <li><a href="https://halykbank.kz/knowledge_base">Halyk Info</a></li>
+          <li><a href="https://halykbank.kz/about/press_center">О банке</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="searchToggle" aria-label="Поиск" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <a href="https://halykbank.kz/map/atm" class="pin-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M17.86 11.36c.1-.44.14-.88.14-1.36 0-3.31-2.7-6-6-6s-6 2.69-6 6c0 .41.05.82.13 1.22.6 2.67 4.53 6.79 5.87 8.12 1.34-1.33 5.26-5.45 5.86-7.98ZM9.4 9.84C9.4 8.43 10.56 7.26 12 7.26s2.58 1.15 2.58 2.58c0 1.43-1.17 2.58-2.58 2.58S9.4 11.27 9.4 9.84Z" fill="currentColor"/></svg>
+          <span>Банк на карте</span>
+        </a>
+        <div class="lang-switcher" id="langSwitcher">
+          <button type="button" class="lang-switcher__btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false">
+            <span>Рус</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="lang-switcher__list" id="langList" role="listbox" hidden>
+            <li role="option"><a href="https://halykbank.kz/kz/other/zoloto">Қаз</a></li>
+            <li role="option"><a href="https://halykbank.kz/en/other/zoloto">Eng</a></li>
+          </ul>
+        </div>
+        <a href="https://homebank.kz/" class="btn-superapp">Halyk</a>
+        <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="search-panel" id="searchPanel" hidden>
+      <div class="container">
+        <form class="search-panel__form" role="search" action="https://halykbank.kz/search" method="get">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <input type="text" name="q" placeholder="Поиск" aria-label="Поиск по сайту">
+          <button type="submit" class="btn btn--primary">Найти</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-catline">
+    <div class="container">
+      <nav class="cat-nav" aria-label="Категории продуктов" id="catNav">
+        <ul>
+          <li><a href="https://halykbank.kz/homebank">Halyk SuperApp</a></li>
+          <li class="has-dropdown">
+            <a href="https://halykbank.kz/credits" aria-haspopup="true" aria-expanded="false">Кредиты</a>
+            <div class="mega-dropdown">
+              <div class="mega-dropdown__inner">
+                <div class="mega-dropdown__col">
+                  <a href="https://halykbank.kz/credits/loans" class="mega-dropdown__title">Кредиты наличными</a>
+                  <a href="https://halykbank.kz/credit/bez-zaloga">До 8 000 000 ₸ кредит без залога</a>
+                  <a href="https://halykbank.kz/credit/na-neotlozhnye-nuzhdy">Кредит на потребительские цели</a>
+                  <a href="https://halykbank.kz/credit/refinans">Рефинансирование</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="https://halykbank.kz/deposits">Депозиты</a></li>
+          <li><a href="https://halykbank.kz/cards">Карты</a></li>
+          <li><a href="https://halykbank.kz/transfers">Переводы</a></li>
+          <li><a href="https://halykbank.kz/premium">Premium</a></li>
+          <li><a href="https://halykbank.kz/market">Market</a></li>
+          <li><a href="https://halykbank.kz/shares">Акции</a></li>
+          <li class="has-dropdown is-current">
+            <a href="https://halykbank.kz/other" aria-haspopup="true" aria-expanded="false">Другое</a>
+            <div class="mega-dropdown">
+              <div class="mega-dropdown__inner">
+                <div class="mega-dropdown__col">
+                  <a href="https://halykbank.kz/other/zoloto" class="mega-dropdown__title is-active">Инвестируйте в золото</a>
+                  <a href="https://halykbank.kz/other/metallicheskie-scheta">Металлические счета</a>
+                  <a href="https://halykbank.kz/other/sejfovye-yachejki">Сейфовые ячейки</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <nav aria-label="Мобильное меню">
+      <ul class="mobile-menu__main">
+        <li><a href="https://halykbank.kz/ru" class="active">Частным клиентам</a></li>
+        <li><a href="https://halykbank.kz/business">Бизнесу</a></li>
+        <li><a href="https://halykbank.kz/halykclub/page/halyk-club">Halyk Club</a></li>
+        <li><a href="https://halykbank.kz/knowledge_base">Halyk Info</a></li>
+        <li><a href="https://halykbank.kz/about/press_center">О банке</a></li>
+      </ul>
+      <ul class="mobile-menu__cats">
+        <li><a href="https://halykbank.kz/homebank">Halyk SuperApp</a></li>
+        <li><a href="https://halykbank.kz/credits">Кредиты</a></li>
+        <li><a href="https://halykbank.kz/deposits">Депозиты</a></li>
+        <li><a href="https://halykbank.kz/cards">Карты</a></li>
+        <li><a href="https://halykbank.kz/transfers">Переводы</a></li>
+        <li><a href="https://halykbank.kz/premium">Premium</a></li>
+        <li><a href="https://halykbank.kz/market">Market</a></li>
+        <li><a href="https://halykbank.kz/shares">Акции</a></li>
+        <li><a href="https://halykbank.kz/other/zoloto" class="active">Другое</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ BREADCRUMBS ============ -->
+  <nav class="breadcrumbs container" aria-label="Хлебные крошки">
+    <ol>
+      <li><a href="https://halykbank.kz/ru">Главная</a></li>
+      <li><a href="https://halykbank.kz/other">Другие услуги</a></li>
+      <li aria-current="page">Инвестируйте в золото</li>
+    </ol>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <h1 id="heroTitle">Инвестируйте<br>в золото</h1>
+        <div class="hero__actions">
+          <a href="#orderForm" class="btn btn--green btn--lg">Оставить заявку</a>
+          <a href="#goldRate" class="btn btn--hollow btn--lg">Стоимость слитков</a>
+        </div>
+      </div>
+      <div class="hero__media">
+        <img src="https://halykbank.kz/storage/app/media/zoloto/Halyk%20Bank_Zoloto_1.png" alt="Мерный слиток аффинированного золота Halyk Bank" width="480" height="360" loading="eager">
+      </div>
+      <button type="button" class="hero__scroll-btn" id="heroScrollBtn" aria-label="Прокрутить вниз">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ============ BUY / SELL TABS ============ -->
+  <section class="section buy-sell" aria-labelledby="buySellTitle">
+    <div class="container">
+      <h2 id="buySellTitle" class="section__title">Покупка и продажа</h2>
+
+      <div class="tabs" role="tablist" aria-label="Покупка или продажа золота">
+        <button type="button" class="tab-btn is-active" id="tabBtnBuy" role="tab" aria-selected="true" aria-controls="tabPanelBuy">Как купить?</button>
+        <button type="button" class="tab-btn" id="tabBtnSell" role="tab" aria-selected="false" aria-controls="tabPanelSell" tabindex="-1">Как продать?</button>
+      </div>
+
+      <div class="tab-panel" id="tabPanelBuy" role="tabpanel" aria-labelledby="tabBtnBuy">
+        <div class="info-card">
+          <div class="info-card__text">
+            <h3>Как купить?</h3>
+            <p>Приобрести золото можно в отделениях банка.</p>
+            <p><strong>Характеристика и цена:</strong></p>
+            <ul>
+              <li>5, 10, 20, 50 и 100 грамм</li>
+              <li>проба 999,9</li>
+            </ul>
+            <p><strong>Номера Казначейства Halyk:</strong></p>
+            <ul>
+              <li>+7 727 259 02 38;</li>
+              <li>+7 727 330 15 41;</li>
+              <li>+7 727 259 03 43.</li>
+            </ul>
+            <p>Цены необходимо уточнять на сайте или у Казначейства банка.</p>
+          </div>
+          <div class="info-card__media">
+            <img src="https://halykbank.kz/storage/app/media/zoloto/Halyk%20Bank_Zoloto_1.png" alt="Мерный слиток золота" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tabPanelSell" role="tabpanel" aria-labelledby="tabBtnSell" hidden>
+        <div class="info-card">
+          <div class="info-card__text">
+            <h3>Как продать?</h3>
+            <p>Для продажи золота достаточно связаться с сотрудниками Казначейства по телефонам, указанным ниже, после чего посетить отделение банка и продать слитки.</p>
+            <p><strong>Номера Казначейства:</strong></p>
+            <ul>
+              <li>+7 727 259 04 50;</li>
+              <li>+7 727 330 11 08;</li>
+              <li>+7 727 259 03 43;</li>
+              <li>+7 727 332 26 26;</li>
+              <li>+7 727 259 02 38;</li>
+              <li>+7 727 244 65 47;</li>
+              <li>+7 727 330 15 41.</li>
+            </ul>
+          </div>
+          <div class="info-card__media">
+            <img src="https://halykbank.kz/storage/app/media/zoloto/Halyk%20Bank_Zoloto_1.png" alt="Мерный слиток золота" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GOLD BARS ============ -->
+  <section class="section gold-bars" aria-labelledby="goldBarsTitle">
+    <div class="container">
+      <h2 id="goldBarsTitle" class="section__title">Мерные слитки аффинированного золота</h2>
+
+      <div class="carousel" id="goldBarsCarousel">
+        <button type="button" class="carousel__arrow carousel__arrow--prev" id="carouselPrev" aria-label="Предыдущие слитки">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel__viewport" id="carouselViewport">
+          <div class="carousel__track" id="goldBarsTrack" role="list"></div>
+        </div>
+        <button type="button" class="carousel__arrow carousel__arrow--next" id="carouselNext" aria-label="Следующие слитки">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GOLD RATE ============ -->
+  <section class="section gold-rate" id="goldRate" aria-labelledby="goldRateTitle">
+    <div class="container">
+      <h2 id="goldRateTitle" class="section__title">Курс золота</h2>
+
+      <div class="gold-rate__controls">
+        <div class="select" id="branchSelect">
+          <label for="branchSelectBtn" class="sr-only">Выберите филиал</label>
+          <button type="button" class="select__btn" id="branchSelectBtn" aria-haspopup="listbox" aria-expanded="false"></button>
+          <ul class="select__list" id="branchSelectList" role="listbox" hidden></ul>
+        </div>
+        <div class="gold-rate__updated">Дата и время установки: <span id="rateDate"></span></div>
+      </div>
+
+      <div class="rate-table-wrap">
+        <div class="rate-table" id="rateTable">
+          <div class="rate-table__row rate-table__row--head">
+            <div>Градация, грамм</div>
+            <div>Продажа Банком, KZT</div>
+            <div>Покупка Банком, KZT</div>
+            <div>Покупка Банком с нарушенной упаковкой, KZT</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ORDER FORM ============ -->
+  <section class="section order-form" id="orderForm" aria-labelledby="orderFormTitle">
+    <div class="container">
+      <h2 id="orderFormTitle" class="order-form__title">Заявка на покупку или продажу</h2>
+      <p class="order-form__desc">Заполнив нижеуказанную форму, вы можете отправить заявку на покупку или продажу слитков золота (информацию относительно наличия слитков и возможности продажи/покупки сообщит менеджер)<br><br>Купить или продать слитки золота можно только в будние дни с 9:00 до 16:00 часов по времени Астаны.</p>
+
+      <div class="order-form__grid">
+        <div class="order-form__main">
+          <form id="goldOrderForm" novalidate>
+            <div class="form-row">
+              <div class="radio-group" role="radiogroup" aria-label="Покупка или продажа">
+                <label class="radio-pill">
+                  <input type="radio" name="type" value="buy" checked>
+                  <span>Покупка у банка</span>
+                </label>
+                <label class="radio-pill">
+                  <input type="radio" name="type" value="sell">
+                  <span>Продажа банку</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-row form-row--split">
+              <div class="form-field">
+                <label for="firstName">Имя</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Укажите ваше имя" autocomplete="given-name" required>
+              </div>
+              <div class="form-field">
+                <label for="lastName">Фамилия</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Укажите вашу фамилию" autocomplete="family-name" required>
+              </div>
+            </div>
+
+            <div class="form-row form-row--split">
+              <div class="form-field">
+                <label for="phone">Номер мобильного телефона</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7(___) ___-__-__" autocomplete="tel" required>
+              </div>
+              <div class="form-field">
+                <label for="branchFormSelect" class="sr-only">Выберите филиал</label>
+                <div class="select select--form" id="branchFormSelectWrap">
+                  <button type="button" class="select__btn" id="branchFormSelectBtn" aria-haspopup="listbox" aria-expanded="false"></button>
+                  <ul class="select__list" id="branchFormSelectList" role="listbox" hidden></ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row" id="lineItems"></div>
+
+            <div class="form-row">
+              <button type="button" class="btn btn--outline-sm" id="addLineItem">Добавить</button>
+              <button type="button" class="btn btn--outline-sm" id="removeLineItem" hidden>Убрать</button>
+            </div>
+
+            <div class="form-row">
+              <label class="checkbox">
+                <input type="checkbox" id="agree" name="agree" checked required>
+                <span class="checkbox__box" aria-hidden="true"></span>
+                <span>Предоставляю согласие на сбор, обработку и хранение персональных данных</span>
+              </label>
+            </div>
+
+            <div class="form-row">
+              <button type="submit" class="btn btn--primary btn--lg btn--submit" id="submitBtn">Отправить</button>
+            </div>
+
+            <div class="form-success" id="formSuccess" hidden role="status">
+              Благодарим за заявку, менеджер свяжется с Вами для ее подтверждения
+            </div>
+          </form>
+        </div>
+
+        <aside class="order-form__summary">
+          <div class="summary-card">
+            <div class="summary-card__item">
+              <div class="summary-card__value" id="sumWeight">0</div>
+              <div class="summary-card__label">Вес</div>
+            </div>
+            <div class="summary-card__item">
+              <div class="summary-card__value" id="sumCount">0</div>
+              <div class="summary-card__label">Кол.во</div>
+            </div>
+            <div class="summary-card__item">
+              <div class="summary-card__value" id="sumTotal">0</div>
+              <div class="summary-card__label">Сумма</div>
+            </div>
+            <div class="summary-card__perGram">
+              Стоимость за 1 грамм при <span id="perGramLabel">покупке у банка</span> <span id="perGramValue">64&nbsp;193,21</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <p class="order-form__notice">ВАЖНО! Банк реализует и обратно выкупает слитки только в рамках программы НБРК от 2017 года (Программа по продаже и выкупу мерных слитков аффинированного золота для населения 2017 года).</p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section faq" aria-labelledby="faqTitle">
+    <div class="container container--narrow">
+      <h2 id="faqTitle" class="section__title section__title--center">Часто задаваемые вопросы</h2>
+      <div class="faq-list" id="faqList"></div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__col">
+      <ul class="site-footer__links">
+        <li><a href="https://halykbank.kz/tariffs">Тарифы</a></li>
+        <li><a href="https://halykbank.kz/documents">Документы</a></li>
+        <li><a href="https://halykbank.kz/security">Безопасность</a></li>
+      </ul>
+      <p class="site-footer__legal">Лицензия (Универсальная банковская лицензия) на осуществление банковских и иных операций №1.1.601.130 от 13.07.2026 выдана АРРФР. Лицензия на осуществление деятельности на рынке ценных бумаг №1.2.47/230/38/1 от 23.06.2023 выдана АРРФР.<br><br>В материалах сайта и мобильного приложения используются изображения и тексты, созданные с применением искусственного интеллекта.</p>
+      <p class="site-footer__powered">powered by <a href="http://amphibia.kz/">amphibia</a></p>
+    </div>
+    <div class="site-footer__col site-footer__col--right">
+      <div class="app-badges">
+        <a href="https://apps.apple.com/us/app/homebank-kz/id440635615" class="app-badge" aria-label="Скачать в App Store">
+          <svg width="120" height="36" viewBox="0 0 138 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="138" height="40" rx="8" fill="currentColor"/><text x="69" y="24" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="12">App Store</text></svg>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=kz.kkb.homebank" class="app-badge" aria-label="Скачать в Google Play">
+          <svg width="120" height="36" viewBox="0 0 138 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="138" height="40" rx="8" fill="currentColor"/><text x="69" y="24" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="12">Google Play</text></svg>
+        </a>
+      </div>
+      <div class="social-block">
+        <span>Мы в соц. сетях</span>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 9h3V6h-3c-2 0-3.5 1.5-3.5 3.5V12H8v3h2.5v6h3v-6H16l1-3h-3.5v-2c0-.6.4-1 1.5-1Z" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="5" width="20" height="14" rx="4" stroke="currentColor" stroke-width="2"/><path d="M10 9l6 3-6 3V9Z" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
